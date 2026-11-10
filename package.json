@@ -1,0 +1,21 @@
+{
+  "name": "editox",
+  "version": "1.0.0",
+  "description": "EDITOX video editor",
+  "author": "me",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win portable"
+  },
+  "devDependencies": {
+    "electron": "^31.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.local.finalcut",
+    "productName": "EDITOX",
+    "files": ["main.js", "index.html", "splash.html", "splash.jpg"],
+    "win": { "target": "portable", "artifactName": "EDITOX.exe" }
+  }
+}
